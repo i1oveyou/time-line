@@ -1,0 +1,56 @@
+title: 时间回忆录
+description: 回忆走过的时光
+author:  xiangmouren
+github: https://github.com/i1oveyou
+about: a fw
+disqus_shortname: stackproblems
+google_analytics: UA-XXXXXXXX-Y
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-facebook
+      link: "#"
+    - icon: fa-twitter
+      link: "#"
+    - icon: fa-linkedin
+      link: "#"
+    - icon: fa-stack-exchange
+      link: "#"
+    - icon: fa-github
+      link: "https://github.com/agusmakmun"
+
+share:
+  twitter_username: github.io
+  fb_appid: 1749788565247320
+
+urls:
+    - text: About Me
+      url: /about/
+    # - text: My Projects
+    #   url: /projects/
+    - text: XML Feed
+      url: /feed.xml
+
+url: "/time-line"
+baseurl: "https://i1oveyou.github.io"
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']

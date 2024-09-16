@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "我的kuanghaorui(大学一年级)-未写"
+title:  "kuanghaorui(大学一年级)-未写"
 category: love-story
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "爱情故事-x某人"
-categories: [love-story]
+title:  "我的爱情经历-x某人"
+category: love-story
 ---
 
 

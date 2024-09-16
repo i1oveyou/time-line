@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "关于本站搭建"
-date:   2021-09-01 12:00:00 +0800
-categories: [others] 
 ---
 
 

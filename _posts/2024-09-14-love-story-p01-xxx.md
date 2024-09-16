@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "我的爱情经历--x某人(小学)"
+title:  "x某人(小学)"
 category: love-story
 ---
 
@@ -25,4 +25,3 @@ category: love-story
 ![2eada2bd8fdc44ee9444aea4efab3c34_th](https://raw.githubusercontent.com/i1oveyou/time-machine/master/_posts/img/2eada2bd8fdc44ee9444aea4efab3c34_th.jpg)
 
 　　之后我和我的好基友讨论过，喜欢班上哪一个女孩，我当时好像说的就是她。那时我和那个女孩没有太多交集，大概也只是对她产生了很大好感。
-

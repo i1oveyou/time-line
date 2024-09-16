@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "我的爱情经历--x某人(高中)"
+title:  "我的爱x某人(高中)-未写"
 category: love-story
 
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "我的爱情经历--TanXinLian(初中)"
+title:  "TanXinLian(初中)-未写"
 category: love-story
 ---
 

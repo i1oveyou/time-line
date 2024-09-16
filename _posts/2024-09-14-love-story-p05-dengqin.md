@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "我的爱情经历--DengQin(小学)"
+title:  "我的爱DengQin(小学)-未写"
 category: love-story
 ---
 

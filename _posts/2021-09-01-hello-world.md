@@ -9,23 +9,13 @@ title:  "关于本站搭建"
 
 
 
-tools
-
-base58: https://www.metools.info/code/c74.html
-
-mp4 -> gif : https://www.freeconvert.com/zh/convert/mp4-to-gif
-
-
-
 # 本站配置
 
 
 
 博客框架 [jekyll](http://jekyllthemes.org/)
 
-采用主题： [agusmakmun](https://github.com/agusmakmun/agusmakmun.github.io) ， 通过博主**enovella_**发现的这个简洁主题
-
-其它主题推荐 [huxpro](https://github.com/Huxpro/huxpro.github.io), [chirpy](https://github.com/cotes2020/jekyll-theme-chirpy/)
+采用主题： [no-style-please](https://github.com/riggraz/no-style-please) 
 
 直接去[jekyll](http://jekyllthemes.org/)下载博客模板 , 之后只需要在模板修改内容, git上传即可
 
@@ -79,30 +69,41 @@ git push -u origin master
 
 
 
+## _config.yml
 
 
 
-
-## 页脚的GitHub
-
-
-
-> _layouts\default.html
-
-
-
-
+### remote_theme
 
 ```
-<div class="btn-github" style="float:right;">
-<iframe src="https://ghbtns.com/github-btn.html?user=enovella&repo=enovella.github.io&type=star&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
-<iframe src="https://ghbtns.com/github-btn.html?user=enovella&repo=enovella.github.io&type=fork&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
 
-===>改为   
-<div class="btn-github" style="float:right;">
-<iframe src="https://ghbtns.com/github-btn.html?user=i1oveyou&repo=i1oveyou.github.io&type=star&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
-<iframe src="https://ghbtns.com/github-btn.html?user=i1oveyou&repo=i1oveyou.github.io&type=fork&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
-</div>
+#theme: no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
+remote_theme: riggraz/no-style-please
+```
+
+把theme修改为remote_theme
+
+
+
+### permalink
+
+原来的permalink有问题
+
+修改如下
+
+```
+permalink: /:month/:day/:title
+```
+
+
+
+### theme_config
+
+修改回退键样式
+
+```
+# back_home_text: ".." 
+back_home_text: "<= back to home" 
 ```
 
 
@@ -111,34 +112,45 @@ git push -u origin master
 
 
 
-在 `/index.html`
+在 `_includes\head.html`
 
 ```
----
-layout: default
----
-
-<div id="home">
-  <h1>{{ site.title }}</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'"> //添加部分
-  <hr />
+  <title>
+    {%- if page.title -%}
+      {{ page.title }}
+    {%- else -%}
+      {{ site.title }}
+    {%- endif -%}
+  </title>
+
+  {%-seo title=false-%}
+  {%-feed_meta-%}
+
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
+</head>
 ```
 
 ps: 图床使用的是他人的cdn加速，可能会挂掉
 
 
 
-在 `static\css\main.css`
+在 `\_sass\no-style-please.scss`
 
 ```css
-
 body {
-  font-family: "LXGW WenKai Screen","Roboto Condensed", Arial, sans-serif;
-  background: url("/static/img/subtle_dots.png");
-  line-height: 1.5em;
-  font-weight: 300;
+  color: black;
+  font-family: "LXGW WenKai Screen","monospace", Arial, sans-serif;
   font-size: 16px;
-  color: #666;
+  line-height: 1.4;
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
 }
 ```
 

@@ -22,7 +22,7 @@ category: love-story
 
 　　类似于这样，文笔有限，不太能描述得出来。
 
-![2eada2bd8fdc44ee9444aea4efab3c34_th](https://raw.githubusercontent.com/i1oveyou/time-machine/master/_posts/2eada2bd8fdc44ee9444aea4efab3c34_th.jpg)
+![2eada2bd8fdc44ee9444aea4efab3c34_th](https://raw.githubusercontent.com/i1oveyou/time-machine/master/_posts/img/2eada2bd8fdc44ee9444aea4efab3c34_th.jpg)
 
 　　之后我和我的好基友讨论过，喜欢班上哪一个女孩，我当时好像说的就是她。那时我和那个女孩没有太多交集，大概也只是对她产生了很大好感。
 

@@ -1,56 +1,27 @@
-title: 时间回忆录
-description: 回忆走过的时光
-author:  xiangmouren
-github: https://github.com/i1oveyou
-about: a fw
-disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
+title: 时光回忆录 # name of the site
+author: xiangmouren # name of site's author
+email: resmile0927@gmail.com # email of site's author
+url: https://i1oveyou.github.io # root address of the site
+baseurl: "/time-line" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+description: > # description of the site (multiple lines allowed)
+  试图描绘流逝的时间
 
-enableTags: true
-tagarray: []
+permalink: /:slug.html
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
+favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
+# goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
 
-social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "#"
-    - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
-    - icon: fa-github
-      link: "https://github.com/agusmakmun"
+theme: no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
 
-share:
-  twitter_username: github.io
-  fb_appid: 1749788565247320
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description in home page
 
-urls:
-    - text: About Me
-      url: /about/
-    # - text: My Projects
-    #   url: /projects/
-    - text: XML Feed
-      url: /feed.xml
+sass:
+  style: :compressed
 
-url: "https://i1oveyou.github.io"
-baseurl: "/time-line"
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
-markdown: kramdown
 plugins:
-  - jekyll-paginate
-  - jekyll-gist
-
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: ['development']
+  - jekyll-feed
+  - jekyll-seo-tag

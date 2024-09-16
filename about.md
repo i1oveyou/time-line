@@ -1,9 +1,8 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
-I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django. Now, I am doing more on backend.
+This is an example page!
 
-email: summon.agus[at]gmail.com
+It's very similar to a `post` layout, with the only difference that the publish date is not shown!

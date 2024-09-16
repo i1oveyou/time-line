@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "爱情故事-x某人"
-date:   2024-09-14 12:00:00 +0800
 categories: [love-story]
 ---
 

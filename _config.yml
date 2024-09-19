@@ -6,7 +6,7 @@ baseurl: "/time-machine" # subpath of the site, e.g. "/blog" (leave it blank "" 
 description: > # description of the site (multiple lines allowed)
   试图描绘流逝的时间
 
-permalink: /:month/:day/:title
+permalink: /:year/:month/:day/:title
 
 favicon: "assets/icon/logo.png" # name+extension of favicon (which must be put on the root folder)
 # goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
@@ -33,7 +33,7 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: Ov23liOqK8mh3fxph6o2    #生成的clientID，下面会讲
   clientSecret: 22e4e7ded2a1353b99f06f7649fb4f397e7f7e30 #生成的clientSecret
-  repo: i1oveyou.github.io    #仓库名称
+  repo: time-machine    #仓库名称
   owner: i1oveyou    #github用户名
   admin: i1oveyou
   distractionFreeMode: false #是否启用类似FB的阴影遮罩

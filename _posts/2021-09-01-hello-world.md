@@ -38,7 +38,7 @@ title:  "关于本站搭建"
 ```
 ./img/ 
 ==>
-https://raw.githubusercontent.com/redqx/redqx.github.io/master/_posts/img/ 
+https://raw.githubusercontent.com/i1oveyou/time-machine/master/_posts/img/ 
 ```
 
 

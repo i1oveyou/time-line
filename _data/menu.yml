@@ -7,17 +7,20 @@ entries:
       - title: 此去经年，应是良辰好景虚设。
       - title: 便纵有千种风情，更与何人说？
 
-  - title: 那些女孩曾出现在我的世界里
-    post_list:
-      category: love-story
-      limit: 3
-      show_more: true
-      show_more_text: See more posts...
-      show_more_url: category/love-story.html
+  - title: Category
+    entries:
+      - title: 那些女孩...在我的世界路过
+        url: category/love-story.html
+      - title: 坏男孩系列
+        url: category/bad-boy.html
+      - title: 忆往昔---人物篇
+        url: category/people.html
+      - title: 儿时的深圳时光
+        url: category/shenzhen.html
 
   - title: all posts
     post_list:
-      limit: 3
+      limit: 6
       show_more: true
       show_more_text: See more posts...
       show_more_url: category/archive.html

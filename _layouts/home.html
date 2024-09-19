@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<header>
+  <h1>{{ site.title }}</h1>
+  {%-if site.theme_config.show_description-%}
+    <p>{{ site.description }}</p>
+  {%-endif-%}
+
+  <div id="mm_diy_info">
+    <div id="weather-info">
+        <p><b> 
+          <span>今日天气: </span>
+          <span id="weatherData">正在加载今日天气...</span>
+        </b></p>
+        <p><b> 
+          <span>weather Tags: </span>
+          <span  id="weatherTags">正在加载今日天气....</span>
+        </b></p>
+    <div>
+  </div>
+  <script src="{{ site.baseurl }}/assets/js/jrsc-weather.js" charset="utf-8"></script>
+
+</header>
+
+{%-include menu_item.html collection=site.data.menu.entries-%}
+
+{{ content }}

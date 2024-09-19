@@ -9,6 +9,14 @@ title:  "关于本站搭建"
 
 
 
+免费api接口： https://apis.whyta.cn/
+
+今日诗词：https://www.jinrishici.com/
+
+天气接口：https://v2.jinrishici.com/info
+
+
+
 # 本站配置
 
 
@@ -65,6 +73,98 @@ git remote set-url origin git@github.com:i1oveyou/i1oveyou.github.io.git
 git add .
 git commit -m "happy every day"
 git push -u origin master
+```
+
+
+
+## 今日诗词
+
+`_layouts\home.html`
+
+```
+---
+layout: default
+---
+<header>
+  <h1>{{ site.title }}</h1>
+  <p><b> 
+    <span>今日诗词: </span>
+    <span id="jinrishici-sentence">正在加载今日诗词....</span>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+  </b></p>
+  {%-if site.theme_config.show_description-%}
+    <p>{{ site.description }}</p>
+  {%-endif-%}
+</header>
+
+{%-include menu_item.html collection=site.data.menu.entries-%}
+
+{{ content }}
+```
+
+
+
+优化版 [javascript简单应用——今日诗词 ](https://www.cnblogs.com/lfri/p/12213043.html)
+
+
+
+## 去掉日期显示（日记网站不需要）
+
+
+
+地方1 `_includes\post_list.html`
+
+```
+{%-if include.category-%}
+  {%-assign posts = site.categories[include.category]-%}  
+{%-else-%}
+  {%-assign posts = site.posts-%}
+{%-endif-%}
+
+{%-if include.limit and posts.size > include.limit-%}
+  {%-assign limit_exceeded = true-%}
+{%-else-%}
+  {%-assign limit_exceeded = false-%}
+{%-endif-%}
+
+{%- if posts.size > 0 -%}
+  <ul>
+    {%- for post in posts limit: include.limit -%}
+        <li>
+          <span>{{- post.date | date: site.theme_config.date_format -}}</span>
+          <a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
+          //删除downcase小写显示
+          //删除post.date那一行
+        </li>
+    {%- endfor -%}
+    {%- if include.show_more and limit_exceeded -%}
+      <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a></li>
+    {%- endif -%}
+  </ul>
+{%- endif -%}
+```
+
+
+
+地方2
+
+```
+---
+layout: default
+---
+
+{%-include back_link.html-%}
+
+<article>
+  <p class="post-meta">//删除这个
+    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+    
+  </p>
+  
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+</article>
 ```
 
 

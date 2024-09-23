@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "LiXin(小学)"
-category: love-story
+category: girls
 ---
 
 

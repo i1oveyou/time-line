@@ -18,7 +18,7 @@ entries:
       - title: 儿时的深圳时光
         url: category/shenzhen.html
 
-  - title: all posts
+  - title: All posts
     post_list:
       limit: 6
       show_more: true

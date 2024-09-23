@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "失败的几次蠢蠢欲动(大学)-未写"
-category: love-story
+category: girls
 ---
 
 # 时间段
